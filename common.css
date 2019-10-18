@@ -1,6 +1,7 @@
 html,
 body {
 	position: relative;
+	background-color: lightgray;
 	margin: 0;
 	height: 100vh;
 	font-family: source-han-sans-japanese, sans-serif;
@@ -45,6 +46,7 @@ li:first-child:before {
 
 main {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
@@ -52,7 +54,12 @@ main {
 	height: calc(100vh - 180px - 50px);
 }
 
-p {
+#preloader {
+	width: 100%;
+}
+
+#contents {
+	display: none;
 	font-size: 32px;
 }
 
